@@ -1,0 +1,20 @@
+body {
+    height: auto;
+    width: auto;
+}
+
+.tab-header {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 15px 15px;
+    width: 25%;
+}
+
+.tab-header:hover {
+    background-color: #777;
+}
