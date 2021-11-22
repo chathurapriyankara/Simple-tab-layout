@@ -8,17 +8,34 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 homeHeader.addEventListener('click', () => {
-    switchTabs('home', 'home-header');
+    window.location.hash = '#home';
 });
 aboutHeader.addEventListener('click', () => {
-    switchTabs('about', 'about-header');
+    window.location.hash = '#about';
 });
 blogHeader.addEventListener('click', () => {
-    switchTabs('blog', 'blog-header');
+    window.location.hash = '#blog';
 });
 contactHeader.addEventListener('click', () => {
-    switchTabs('contact' , 'contact-header');
+    window.location.hash = '#contact';
 });
+
+window.onhashchange = function() {
+    switch(window.location.hash) {
+        case '#home':
+            switchTabs('home' , 'home-header');
+            break;
+        case '#about':
+            switchTabs('about' , 'about-header');
+            break;
+        case '#blog':
+            switchTabs('blog' , 'blog-header');
+            break;
+        case '#contact':
+            switchTabs('contact' , 'contact-header');
+            break;
+    }
+};
 
 function switchTabs(tabID, headerID) {
     let tabContent = document.getElementsByClassName("tab-content");
