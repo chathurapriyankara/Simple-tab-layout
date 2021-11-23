@@ -18,3 +18,19 @@ body {
 .tab-header:hover {
     background-color: #777;
 }
+
+.footer {
+    /*left: 0;*/
+    /*bottom: 0;*/
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+
+.tab-container {
+    height:90%;
+    width:100%;
+    overflow:hidden
+}

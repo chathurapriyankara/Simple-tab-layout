@@ -1,5 +1,7 @@
+<body style="margin:0; padding:0">
 <div>
+    <link rel="stylesheet" href="../styles/tab-content.css">
     <p>This is home content</p>
-    <button id="home-btn">Click me...</button>
-    <script src="../scripts/home-tab.js"></script>
+    <img class="background-image" src="../images/jungle.jpeg">
 </div>
+</body>
